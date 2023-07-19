@@ -27,3 +27,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Docker commands:
+docker build . -t jupieter/vue_frontend_mentor_challenges
