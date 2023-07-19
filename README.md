@@ -29,4 +29,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Docker commands:
-docker build . -t jupieter/vue_frontend_mentor_challenges
+docker build -t . jupieter/vue_frontend_mentor_challenges
+docker run -it -p 8080:8080 --rm --name peter_jung_1 jupieter/vue_frontend_mentor_challenges
+
+docker rename 6d06 peter_jung  
