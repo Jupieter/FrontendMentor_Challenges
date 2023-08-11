@@ -15,7 +15,7 @@
       <div>
         <ul>
           <li v-for="item in items" :key="item.category">
-            <img :src="item.icon" :alt="item.category" />
+            <img :src="item.icon" :alt="item.icon" />
             <span>{{ item.category }}</span>
             <span>{{ item.score }}/100</span>
           </li>

@@ -55,8 +55,10 @@ nav {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 89vh; /* Teljes képernyőmagasság */
-  overflow-y: auto; /* Görgethetőség a tartalom esetén */
+  // overflow-y: auto; /* Görgethetőség a tartalom esetén */
 }
 
 .content {
