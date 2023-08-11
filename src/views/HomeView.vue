@@ -1,10 +1,13 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <router-link to="/newbie"> Newbie </router-link>
+    <h1>Welcome in my Vue.jsApp</h1>
+    <h1>
+      FrontendMentor Challange
+      <img alt="Vue logo" src="../assets/logo.png" />
+    </h1>
     <router-view />
-    <HelloWorld msg="Welcome in my Vue.js App FrontendMentor Challange" />
-    <p>NEW line</p>
+    <router-link to="/newbie"> Newbie </router-link>
+    <HelloWorld msg="Hello VUE.js" />
   </div>
 </template>
 

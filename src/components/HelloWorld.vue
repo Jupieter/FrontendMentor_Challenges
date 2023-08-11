@@ -1,9 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>More then World</p>
-    <p>More then People</p>
-    <p>More then Our</p>
+    <h2>{{ msg }}</h2>
     <p>
       For a guide and recipes on how to configure/customise this project,<br />
       check out the
@@ -124,8 +121,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.hello {
+  font-size: xx-small;
+}
 h3 {
-  margin: 40px 0 0;
+  margin: 10px 0 0;
 }
 ul {
   list-style-type: none;
