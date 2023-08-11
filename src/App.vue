@@ -7,9 +7,22 @@
   </div>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link v-if="showAboutLink" to="/about">About</router-link>
   </nav>
 </template>
+
+<script>
+import { useStore } from "vuex";
+
+export default {
+  computed: {
+    showAboutLink() {
+      const store = useStore();
+      return store.state.showAboutLink;
+    },
+  },
+};
+</script>
 
 <style lang="scss">
 #app {

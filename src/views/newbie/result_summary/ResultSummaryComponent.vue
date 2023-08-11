@@ -22,18 +22,26 @@
         </ul>
       </div>
     </div>
+    <button @click="toggleAboutLink">Toggle About Link</button>
   </div>
 </template>
 
 <script>
+import { useStore } from "vuex";
 import data from "./data.json";
 export default {
+  name: "ResultSummaryComponent",
   data() {
     return {
       items: data,
     };
   },
-  name: "ResultSummaryComponent",
+  methods: {
+    toggleAboutLink() {
+      const store = useStore();
+      store.commit("setShowAboutLink", !store.state.showAboutLink);
+    },
+  },
 };
 </script>
 
